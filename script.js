@@ -1,4 +1,11 @@
- var boughtAC = false;
+ 
+
+
+
+
+
+
+var boughtAC = false;
     var EnabledAC = false;
     var AC;
     function buyAutoClick() {
@@ -204,10 +211,21 @@ delay
             color: 0x00ff00
         });
         var cube = new THREE.Mesh(geometry, material);
+        var player = new THREE.Mesh(geometry, material);
+    
         scene.add(cube);
+        scene.add(player);   
+        player.position.z = 7;
+        camera.position.z = player.position.z;
 
-        // Position the camera
-        camera.position.z = 5;
+        var floorgeometry = new THREE.PlaneGeometry( 10, 10 );
+        var material = new THREE.MeshBasicMaterial( {color: 0xFFFFFF, side: THREE.DoubleSide} );
+        var floorplane = new THREE.Mesh( floorgeometry, material );
+        floorplane.position.y -= 1;
+        floorplane.rotation.x = 90;
+        scene.add(floorplane);
+
+   
 
         // Game controls
         var isSpinning = true;
@@ -518,6 +536,8 @@ delay
                 camera.position.add(direction.multiplyScalar(moveSpeed));
             }
         }
+
+ 
 
         // Render loop
         function animate() {
