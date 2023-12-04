@@ -1,0 +1,437 @@
+body {
+            margin: 0;
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #menu {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            border: 1px solid white;
+        }
+
+        #help {
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+        }
+
+        #help:hover {
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+        }
+
+        #shop {
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+        }
+
+        #shop:hover {
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+        }
+
+        #Shop {
+            border: 2px solid white;
+            color: white;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            overflow-x: hidden;
+            overflow-y: auto/* Add overflow to enable scrolling */
+            width: 200px;
+            /* Set the width for the shop */
+            display: none;
+            /* Start with the shop hidden */
+        }
+
+
+        #ShopTitle {
+            color: gold;
+            font-size: 35px;
+        }
+
+        #ExitShopBtn {
+            border: 1px solid white;
+            width: 20px;
+            height: 20px;
+            color: white;
+            background-color: black;
+        }
+
+        #ExitShopBtn:hover {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            color: black;
+            background-color: white;
+
+        }
+
+        #ShopItem {
+            border: 1px solid white;
+
+        }
+
+        #ColorChanger {
+            background: linear-gradient(to right, #FF0000, #FF9900, #FFFF00, #00FF00, #0000FF, #9900FF, #FF00FF);
+            background-size: 400% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: rainbow-fade 1s linear infinite;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid white;
+            display: none;
+        }
+
+        #WireFrame {
+
+
+            color: transparent;
+            -webkit-background-clip: text;
+
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid white;
+
+            -webkit-text-stroke: 1.5px white;
+            display: none;
+
+        }
+
+        #WireFrame2 {
+
+
+            color: transparent;
+            -webkit-background-clip: text;
+
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid white;
+
+            -webkit-text-stroke: 1.5px white;
+            display: block;
+
+        }
+
+        @keyframes rainbow-fade {
+            0% {
+                background-position: 0% 5%;
+            }
+            5% {
+                background-position: 5% 10%;
+            }
+            10% {
+                background-position: 10% 15%;
+            }
+            15% {
+                background-position: 15% 20%;
+            }
+            20% {
+                background-position: 20% 25%;
+            }
+            25% {
+                background-position: 25% 30%;
+            }
+            30% {
+                background-position: 30% 35%;
+            }
+            35% {
+                background-position: 35% 40%;
+            }
+            40% {
+                background-position: 40% 45%;
+            }
+            45% {
+                background-position: 45% 50%;
+            }
+            50% {
+                background-position: 50% 55%;
+            }
+            55% {
+                background-position: 55% 60%;
+            }
+            60% {
+                background-position: 60% 65%;
+            }
+            65% {
+                background-position: 65% 70%;
+            }
+            70% {
+                background-position: 70% 75%;
+            }
+            75% {
+                background-position: 75% 80%;
+            }
+            80% {
+                background-position: 80% 85%;
+            }
+            85% {
+                background-position: 85% 90%;
+            }
+            90% {
+                background-position: 90% 95%;
+            }
+            95% {
+                background-position: 95% 100%;
+            }
+            100% {
+                background-position: 100% 95%;
+            }
+            95% {
+                background-position: 95% 100%;
+            }
+            90% {
+                background-position: 90% 95%;
+            }
+            85% {
+                background-position: 85% 90%;
+            }
+            80% {
+                background-position: 80% 85%;
+            }
+            75% {
+                background-position: 75% 80%;
+            }
+            70% {
+                background-position: 70% 75%;
+            }
+            65% {
+                background-position: 65% 70%;
+            }
+            60% {
+                background-position: 60% 65%;
+            }
+            55% {
+                background-position: 55% 60%;
+            }
+            50% {
+                background-position: 50% 55%;
+            }
+            45% {
+                background-position: 45% 50%;
+            }
+            40% {
+                background-position: 40% 45%;
+            }
+            35% {
+                background-position: 35% 40%;
+            }
+            30% {
+                background-position: 30% 35%;
+            }
+            25% {
+                background-position: 25% 30%;
+            }
+            20% {
+                background-position: 20% 25%;
+            }
+            15% {
+                background-position: 15% 20%;
+            }
+            10% {
+                background-position: 10% 15%;
+            }
+            5% {
+                background-position: 5% 10%;
+            }
+
+        }
+
+        #buyColor {
+            background: linear-gradient(to right, #FF0000, #FF9900, #FFFF00, #00FF00, #0000FF, #9900FF, #FF00FF);
+            background-size: 400% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: rainbow-fade 1s linear infinite;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+
+
+        #PriceTag {
+
+            color: gold;
+            background: black;
+            border: 1px solid white;
+            width: 100%;
+        }
+
+        #PriceTag:hover {
+            background: white;
+        }
+
+        #AudioUpload {
+            border: 1px solid white;
+            color: white;
+            display: none;
+        }
+        
+
+        #FileUpload {
+            border: 1px solid white;
+            color: white;
+            display: none;
+        }
+
+        #ImageUp {
+            border: 1px solid white;
+        }
+
+        #AudioUp {
+            border: 1px solid white;
+        }
+
+        #BPM {
+            -webkit-appearance: none;
+            /* Override default CSS styles */
+            appearance: none;
+            width: 50%;
+            /* Full-width */
+            height: 8px;
+            /* Specified height */
+            background: #d3d3d3;
+            /* Grey background */
+            outline: none;
+            /* Remove outline */
+            opacity: 0.7;
+            /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s;
+            /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        #BPM:hover {
+            opacity: 1.0;
+        }
+
+        #BPM::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            /* Override default look */
+            appearance: none;
+            width: 15px;
+            /* Set a specific slider handle width */
+            height: 15px;
+            /* Slider handle height */
+            background: #04AA6D;
+            /* Green background */
+            cursor: pointer;
+            /* Cursor on hover */
+        }
+
+        #BPM::-moz-range-thumb {
+            width: 25px;
+            /* Set a specific slider handle width */
+            height: 25px;
+            /* Slider handle height */
+            background: #04AA6D;
+            /* Green background */
+            cursor: pointer;
+            /* Cursor on hover */
+        }
+
+        #BPMSlider {
+            display: none;
+        }
+
+        #ClickSpeedA {
+            color: white;
+            background: black;
+            border: 1px solid white;
+            font-weight: bold;
+            opacity: .7;
+            transition: opacity .2s;
+            font-size: 24px;
+            left: 0;
+            display: inline-block;
+        }
+
+        #ClickSpeedA:hover {
+            color: black;
+            background: white;
+            opacity: 1.0;
+
+        }
+
+        #ClickSpeedA:disabled {
+            opacity: .2;
+        }
+
+        #ClickSpeedB {
+            color: white;
+            background: black;
+            border: 1px solid white;
+            font-weight: bold;
+            opacity: .7;
+            transition: opacity .2s;
+            font-size: 24px;
+            right: 0;
+            display: inline-block;
+        }
+
+        #ClickSpeedB:hover {
+            color: black;
+            background: white;
+            opacity: 1.0;
+
+        }
+
+        #ClickSpeedB:disabled {
+            opacity: .2;
+        }
+
+        #ClickS {
+            color: white;
+            background: black;
+            border: 1px solid white;
+            font-weight: bold;
+            font-size: 24px;
+            
+            display:inline-block;
+
+        }
+        #fixThis {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        #ClickSped {
+            display:inline-block;
+        }
+
+        #UpgradeCS {
+
+            color: gold;
+            background: black;
+            border: 1px solid white;
+            width: 100%;
+        }
+
+        #UpgradeCS:hover {
+            background: white;
+        }
+        #AutoClicker {
+            border: 1px solid white;
+            color: white;
+            display: none;
+        }
+        #AutoClickS {
+            border: 1px solid white;
+        }
